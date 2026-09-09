@@ -19,5 +19,9 @@ public record Task(
         if (title.isBlank()) {
             throw new IllegalArgumentException("title must not be blank");
         }
+
+        if (assignee.isBlank()) {
+            throw new IllegalArgumentException("assignee must not be blank");
+        }
     }
 }
